@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Guide</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🌍 TravelGuide
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Explore The World</h1>
+
+            <p>
+                Discover beautiful destinations, amazing places
+                and unforgettable travel experiences.
+            </p>
+
+            <a href="#places" class="btn">
+                Explore Places
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h2>Find Your Destination</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a place..."
+        >
+
+    </section>
+
+
+    <!-- Places Section -->
+    <section id="places" class="places-section">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="places-container" id="placesContainer">
+
+            <!-- Taj Mahal -->
+            <div class="place-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80"
+                    alt="Taj Mahal"
+                >
+
+                <div class="place-info">
+
+                    <h3>Taj Mahal</h3>
+
+                    <p>
+                        Visit the beautiful symbol of love
+                        in Agra, India.
+                    </p>
+
+                    <span>📍 Agra, India</span>
+
+                    <button onclick="showDetails('Taj Mahal')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Goa -->
+            <div class="place-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80"
+                    alt="Goa Beach"
+                >
+
+                <div class="place-info">
+
+                    <h3>Goa</h3>
+
+                    <p>
+                        Enjoy beautiful beaches, sunsets
+                        and exciting activities.
+                    </p>
+
+                    <span>📍 Goa, India</span>
+
+                    <button onclick="showDetails('Goa')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Kerala -->
+            <div class="place-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80"
+                    alt="Kerala"
+                >
+
+                <div class="place-info">
+
+                    <h3>Kerala</h3>
+
+                    <p>
+                        Experience peaceful backwaters,
+                        greenery and nature.
+                    </p>
+
+                    <span>📍 Kerala, India</span>
+
+                    <button onclick="showDetails('Kerala')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Manali -->
+            <div class="place-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+                    alt="Manali"
+                >
+
+                <div class="place-info">
+
+                    <h3>Manali</h3>
+
+                    <p>
+                        Explore mountains, snow and
+                        beautiful Himalayan views.
+                    </p>
+
+                    <span>📍 Himachal Pradesh, India</span>
+
+                    <button onclick="showDetails('Manali')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Jaipur -->
+            <div class="place-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80"
+                    alt="Jaipur"
+                >
+
+                <div class="place-info">
+
+                    <h3>Jaipur</h3>
+
+                    <p>
+                        Discover royal palaces, forts
+                        and colourful markets.
+                    </p>
+
+                    <span>📍 Rajasthan, India</span>
+
+                    <button onclick="showDetails('Jaipur')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Kashmir -->
+            <div class="place-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80"
+                    alt="Kashmir"
+                >
+
+                <div class="place-info">
+
+                    <h3>Kashmir</h3>
+
+                    <p>
+                        Enjoy mountains, lakes and
+                        breathtaking natural beauty.
+                    </p>
+
+                    <span>📍 Kashmir, India</span>
+
+                    <button onclick="showDetails('Kashmir')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+
+        <h2>Tour Packages</h2>
+
+        <div class="packages-container">
+
+            <div class="package-card">
+
+                <h3>Goa Package</h3>
+
+                <h4>₹12,999</h4>
+
+                <p>3 Days / 2 Nights</p>
+                <p>🏨 Hotel Stay</p>
+                <p>🍴 Food</p>
+                <p>🚗 Local Transport</p>
+
+                <button onclick="bookPackage('Goa Package')">
+                    Book Now
+                </button>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <h3>Kerala Package</h3>
+
+                <h4>₹18,999</h4>
+
+                <p>5 Days / 4 Nights</p>
+                <p>🏨 Hotel Stay</p>
+                <p>🍴 Food</p>
+                <p>🚗 Local Transport</p>
+
+                <button onclick="bookPackage('Kerala Package')">
+                    Book Now
+                </button>
+
+            </div>
+
+
+            <div class="package-card">
+
+                <h3>Kashmir Package</h3>
+
+                <h4>₹24,999</h4>
+
+                <p>6 Days / 5 Nights</p>
+                <p>🏨 Hotel Stay</p>
+                <p>🍴 Food</p>
+                <p>🚗 Local Transport</p>
+
+                <button onclick="bookPackage('Kashmir Package')">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <h2>About TravelGuide</h2>
+
+        <p>
+            TravelGuide is a simple tourism website designed
+            to help travellers discover beautiful destinations,
+            compare tour packages and plan their trips easily.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 TravelGuide | B.Tech Mini Project
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
